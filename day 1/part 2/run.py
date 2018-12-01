@@ -8,8 +8,7 @@ def find_frequency():
     while True:
         for item in numbers:
             current_frequency += item
-            for past in past_frequencies:
-                if past == current_frequency:
-                    return current_frequency
+            if current_frequency in past_frequencies:
+                return current_frequency
             past_frequencies.append(current_frequency)
 print(find_frequency())
