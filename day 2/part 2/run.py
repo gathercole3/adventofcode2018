@@ -4,8 +4,6 @@ def run():
     with open("input/strings.txt", "r") as f:
         strings = [item.rstrip() for item in f]
 
-    double_count = 0
-    tripple_count = 0
     match_found = False
 
     for compare_string in strings:
